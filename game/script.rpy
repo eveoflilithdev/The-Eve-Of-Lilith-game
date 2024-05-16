@@ -78,19 +78,17 @@ label start:
 
     show Scene1
 
-    pm "In the beginning, their were two celestial entitys."
+    pm "The predominant belief of creation is that in the beginning their were two celestial entitys."
 
-    pm "The first represented life."
+    pm "The first represented life and the second represented death."
 
-    pm "The second represented death."
-
-    pm "They travelled across the ether to find a suitable world to seed with life."
+    pm "It is believed that they travelled across space to find a suitable world to seed with life."
 
     hide Scene1
 
     show Scene2P1
 
-    pm "Eventually they came across a harsh, barren world that was inhabited by primitive life that stuggled to survive."
+    pm "Eventually they came across our world, in the beginning it was a harsh, barren place that was inhabited by primitive life that stuggled to survive."
 
     hide Scene2P1
 
@@ -108,67 +106,67 @@ label start:
 
     show Scene3
 
-    pm "Within this paradise were three beings said to have been created by the celestials for themselves to inhabit, two of them were women and one was a man."
+    pm "Within this paradise stood three beings said to have been created by the celestials for themselves to inhabit, two of them were women and one was a man."
     
     hide Scene3
 
     show Scene4P1
 
-    pm "The paradise provided with it a home for the three beings. It is here that they began to engage in procreation, not for the purpose of creating children but to increase the life essence upon the barren world."
+    pm "The paradise provided the three with shelter. It is here that they began to fill the barren world with the essence needed for life "
 
     hide Scene4P1
 
     show Scene4P2
 
-    pm "Eventually after engaging in procreation both women would become pregnant."
+    pm "Eventually both women are said to have become pregnant."
 
     hide Scene4P2
 
     show Scene4P3
 
-    pm "As the first of many pregnancies approached the three came to love and care for each other equally."
+    pm "As the first of many pregnancies approached the bond between them grew stronger."
 
     hide Scene4P3
 
     show Scene5P1
 
-    pm "Upon the first birth it is said that the souls of the Paragons were born, alongside an abundance of life essence. The life essence allowed the paradise to expand."
+    pm "When the first birth came, it is said that the souls of the Paragons were born alongside an abundance of life essence."
 
     hide Scene5P1
 
     show Scene5P2
 
-    pm "Many more births of life essence followed the first and the paradise continued to slowly expand."
+    pm "As the 3 beings continued to live they became pregnant many more times, allowing the paradise to expand.  "
 
     hide Scene5P2
 
     show Scene6P1
 
-    pm "After many decades one of the women is said to have passed away, the soul of the deceased took the form of a celestial entity."
+    pm "Eventually is is said that after many decades one of them passed away, the soul of the deceased came into the possession of the others."
 
     hide Scene6P1
 
     show Scene6P2
 
-    pm "The two remaining beings continued to engage in procreation."
+    pm "The remaining two continued to live in the paradise until eventually..."
 
     hide Scene6P2
 
     show Scene6P3
 
-    pm "The woman that took possession of soul of the deceased woman is said to have inserted it into her pregnant body."
+    pm "...they chose to forgo the creation of life essence and attempt to rebirth the deceased."
 
     hide Scene6P3
 
     show Scene7P1
 
-    pm "Following this event the deceased woman is said to have been reborn into the world."
+    pm "This attempt is recorded as having been succesful."
 
     hide Scene7P1
 
     show Scene7P2
 
-    pm "The three beings were complete again and began engaging in procreation once more."
+    pm "The three beings were complete again and returned to filling the world with life essence."
 
     hide Scene7P2
 
@@ -180,7 +178,7 @@ label start:
 
     show Scene8
 
-    pm "As had happened many times already the two women fell pregnant, however due to the empowered life essence the two gave birth to the physical forms of the Paragons."
+    pm "Due to the life essence being empowered the physical embodiments of the Paragons were said to have been born."
 
     hide Scene8
 
@@ -188,9 +186,9 @@ label start:
 
     pm "After many more decades, perhaps centurys, the man passed away."
 
-    pm "The unity between the two women and the paragons is said to have shattered shortly after the man was laid to rest."
+    pm "The unity between the two women and the paragons is said to have shattered shortly after the man was laid to rest, the effects of this have not been recorded."
 
-    pm "However they shared a common goal, to spread out across the world and provide assistance to the life that had sprung forth from the life essence."
+    pm "However they shared a common goal and is generally assumed that they spread out across the world and provided assistance to the life that had sprung forth."
 
     hide Scene9
 
