@@ -136,7 +136,7 @@ label start:
 
     show Scene5P2
 
-    pm "As the 3 beings continued to live they became pregnant many more times, allowing the paradise to expand.  "
+    pm "The three continued to bring forth life essence into the world allowing the paradise to expand."
 
     hide Scene5P2
 
@@ -276,7 +276,7 @@ label start:
 
     me "Sorry about the book hitting you."
 
-    mc "It's all good, im the one who hit it anyway."
+    mc "It's all good."
 
     hide s11p7
 
