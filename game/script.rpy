@@ -1,4 +1,4 @@
-﻿define pm = Character("???") #Prologue, Meridia
+define pm = Character("???") #Prologue, Meridia
 define pl = Character("???") #Prologue, Lilandra
 define mc = Character("Adam") #Main Character, Adam - might make this customizable eventually
 define me = Character("Meridia") #Main Characters twin sister
@@ -19,8 +19,8 @@ image Scene4P1 = Movie(play="Scene4v4part1.webm")
 image Scene4P2 = Movie(play="Scene4v4part2.webm")
 image Scene4P3 = Movie(play="Scene4v4part3.webm")
 image Scene5P1 = Movie(play="Scene5v5part1.webm")
-image Scene5P2 = Movie(play="Scene5v5part2.webm")
-image Scene6P1 = Movie(play="Scene6v3part1.webm")
+image Scene5P2 = Movie(play="Scene5part2.webm")
+image Scene6P1 = Movie(play="Scene6part1.webm")
 image Scene6P2 = Movie(play="Scene6part2.webm")
 image Scene6P3 = Movie(play="Scene6part3.webm")
 image Scene7P1 = Movie(play="Scene7part1.webm")
