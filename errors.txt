@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 82: end of line expected.
-    show s1.webm
-           ^
+File "game/script.rpy", line 537: show statement expects a non-empty block.
+    show  s13p4 with dissolve: xzoom 0.5 yzoom 0.5
+                              ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sat May 18 21:49:39 2024
+Sat May 18 22:03:10 2024

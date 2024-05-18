@@ -12,28 +12,28 @@ define li = Character("Lily") #Main Characters former/current girlfriend
 
 image s1 = Movie(play="s1.webm")
 image s2p1 = Movie(play="s2p1.webm")
-image Scene2P2 = Movie(play="Scene2part2.webm")
-image Scene2P3 = Movie(play="Scene2part3.webm")
-image Scene3 = Movie(play="Scene3.webm")
-image Scene4P1 = Movie(play="Scene4part1.webm")
-image Scene4P2 = Movie(play="Scene4part2.webm")
-image Scene4P3 = Movie(play="Scene4part3.webm")
-image Scene5P1 = Movie(play="Scene5part1.webm")
-image Scene5P2 = Movie(play="Scene5part2.webm")
-image Scene6P1 = Movie(play="Scene6part1.webm")
-image Scene6P2 = Movie(play="Scene6part2.webm")
-image Scene6P3 = Movie(play="Scene6part3.webm")
-image Scene7P1 = Movie(play="Scene7part1.webm")
-image Scene7P2 = Movie(play="Scene7part2.webm")
-image Scene7P3 = Movie(play="Scene7part3.webm")
-image Scene8 = Movie(play="Scene8.webm")
-image Scene9 = Movie(play="Scene9.webm")
-image Scene10P1 = Movie(play="Scene10part1.webm")
-#image Scene10P2 = "Scene10part2.png"
-#image Scene10P3 = "Scene10part3.png"
-image Scene10P4 = Movie(play="Scene10part4.webm")
-#image Scene10P5 = "Scene10part5.png"
-image Scene10P6 = Movie(play="Scene10part6.webm")
+image s2p2 = Movie(play="s2p2.webm")
+image s2p3 = Movie(play="s2p3.webm")
+image s3 = Movie(play="s3.webm")
+image s4p1 = Movie(play="s4p1.webm")
+image s4p2 = Movie(play="s4p2.webm")
+image s4p3 = Movie(play="s4p3.webm")
+image s5p1 = Movie(play="s5p1.webm")
+image s5p2 = Movie(play="s5p2.webm")
+image s6p1 = Movie(play="s6p1.webm")
+image s6p2 = Movie(play="s6p2.webm")
+image s6p3 = Movie(play="s6p3.webm")
+image s7p1 = Movie(play="s7p1.webm")
+image s7p2 = Movie(play="s7p2.webm")
+image s7p3 = Movie(play="s7p3.webm")
+image s8 = Movie(play="s8.webm")
+image s9 = Movie(play="s9.webm")
+image s10p1 = Movie(play="s10p1.webm")
+#image s10p2 = "s10p2.png"
+#image s10p3 = "s10p3.png"
+image s10p4 = Movie(play="s10p4.webm")
+#image s10p5 = "s10p5.png"
+image s10p6 = Movie(play="s10p6.webm")
 #image s11p1 = "s11p1.png"
 #image s11p2 = "s11p2.png"
 #image s11p3 = "s11p3.png"
@@ -94,97 +94,97 @@ label start:
 
     hide s2p1
 
-    show Scene2P2
+    show s2p2
 
     pm "It is told that they merged together in order to seed the world with life."
 
-    hide Scene2P2
+    hide s2p2
 
-    show Scene2P3
+    show s2p3
 
     pm "The result of this merging is said to have transformed a part of the world into a paradise."
 
-    hide Scene2P3
+    hide s2p3
 
-    show Scene3
+    show s3
 
     pm "Within this paradise stood three beings said to have been created by the celestials for themselves to inhabit, two of them were women and one was a man."
     
-    hide Scene3
+    hide s3
 
-    show Scene4P1
+    show s4p1
 
     pm "The paradise provided the three with shelter. It is here that they began to fill the barren world with the essence needed for life "
 
-    hide Scene4P1
+    hide s4p1
 
-    show Scene4P2
+    show s4p2
 
     pm "Eventually both women are said to have become pregnant."
 
-    hide Scene4P2
+    hide s4p2
 
-    show Scene4P3
+    show s4p3
 
     pm "As the first of many pregnancies approached the bond between them grew stronger."
 
-    hide Scene4P3
+    hide s4p3
 
-    show Scene5P1
+    show s5p1
 
     pm "When the first birth came, it is said that the souls of the Paragons were born alongside an abundance of life essence."
 
-    hide Scene5P1
+    hide s5p1
 
-    show Scene5P2
+    show s5p2
 
     pm "The three continued to bring forth life essence into the world allowing the paradise to expand."
 
-    hide Scene5P2
+    hide s5p2
 
-    show Scene6P1
+    show s6p1
 
     pm "Eventually is is said that after many decades one of them passed away, the soul of the deceased came into the possession of the others."
 
-    hide Scene6P1
+    hide s6p1
 
-    show Scene6P2
+    show s6p2
 
     pm "The remaining two continued to live in the paradise until eventually..."
 
-    hide Scene6P2
+    hide s6p2
 
-    show Scene6P3
+    show s6p3
 
     pm "...they chose to forgo the creation of life essence and attempt to rebirth the deceased."
 
-    hide Scene6P3
+    hide s6p3
 
-    show Scene7P1
+    show s7p1
 
     pm "This attempt is recorded as having been succesful."
 
-    hide Scene7P1
+    hide s7p1
 
-    show Scene7P2
+    show s7p2
 
     pm "The three beings were complete again and returned to filling the world with life essence."
 
-    hide Scene7P2
+    hide s7p2
 
-    show Scene7P3
+    show s7p3
 
     pm "The connection the three shared grew stronger with each passing year, this increased and empowered the life essence that was birthed."
 
-    hide Scene7P3
+    hide s7p3
 
-    show Scene8
+    show s8
 
     pm "Due to the life essence being empowered the physical embodiments of the Paragons were said to have been born."
 
-    hide Scene8
+    hide s8
 
-    show Scene9
+    show s9
 
     pm "After many more decades, perhaps centurys, the man passed away."
 
@@ -192,13 +192,13 @@ label start:
 
     pm "However they shared a common goal and is generally assumed that they spread out across the world and provided assistance to the life that had sprung forth."
 
-    hide Scene9
+    hide s9
 
-    show Scene10P1
+    show s10p1
 
     pl "Well, this is certainly intriguing."
 
-    hide Scene10P1
+    hide s10p1
 
     show s10p2
 
@@ -212,11 +212,11 @@ label start:
 
     hide s10p3
 
-    show Scene10P4
+    show s10p4
 
     pl "I AM STARVING!"
 
-    hide Scene10P4
+    hide s10p4
 
     show s10p5
 
@@ -224,11 +224,11 @@ label start:
 
     hide s10p5
 
-    show Scene10P6
+    show s10p6
 
     pl "I WILL FIND YOU!"
 
-    hide Scene10P6
+    hide s10p6
 
     #End of Prologue
 
