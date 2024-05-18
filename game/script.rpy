@@ -69,6 +69,9 @@ image s12p19 = "s12p19.png"
 image s12p20 = "s12p20.png"
 image s12p21 = "s12p21.png"
 image s12p22 = "s12p22.png"
+image s13p1 = "s13p1.png"
+
+
 
 # The game starts here.
 
@@ -508,9 +511,37 @@ label start:
 
     mc "I'll have to talk to Meridia later, anyway ill be in my room if you need me."
 
+    hide s12p22
 
+    show s13p1
 
+    mc "Meridia?"
 
+    hide s13p1
+
+    show s13p2
+
+    mc "Uhh, you want to talk?"
+
+    me "No."
+
+    hide s13p2
+
+    show s13p3
+
+    me "YOU SHOULD'VE TOLD ME YOU HAD A GIRLFRIEND!"
+
+    mc "She's not my girlfriend."
+
+    hide s13p3
+
+    show s13p4
+
+    me "IT DOESN'T MATTER!"
+
+    mc "...well ill be in my room if you want to talk."
+
+    hide s13p4
 
 
 
