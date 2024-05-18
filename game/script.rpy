@@ -10,13 +10,13 @@ define vi = Character("Violet") #Main Characters former teacher and current boss
 define li = Character("Lily") #Main Characters former/current girlfriend
 
 
-image Scene1 = Movie(play="Scene1v6.webm")
-image Scene2P1 = Movie(play="Scene2v7part1.webm")
-image Scene2P2 = Movie(play="Scene2v7part2.webm")
-image Scene2P3 = Movie(play="Scene2v7part3.webm")
-image Scene3 = Movie(play="Scene3v6.webm")
-image Scene4P1 = Movie(play="Scene4v4part1.webm")
-image Scene4P2 = Movie(play="Scene4v4part2.webm")
+image Scene1 = Movie(play="Scene1.webm")
+image Scene2P1 = Movie(play="Scene2part1.webm")
+image Scene2P2 = Movie(play="Scene2part2.webm")
+image Scene2P3 = Movie(play="Scene2part3.webm")
+image Scene3 = Movie(play="Scene3.webm")
+image Scene4P1 = Movie(play="Scene4part1.webm")
+image Scene4P2 = Movie(play="Scene4part2.webm")
 image Scene4P3 = Movie(play="Scene4part3.webm")
 image Scene5P1 = Movie(play="Scene5part1.webm")
 image Scene5P2 = Movie(play="Scene5part2.webm")
