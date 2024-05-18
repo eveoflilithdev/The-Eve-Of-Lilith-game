@@ -10,8 +10,8 @@ define vi = Character("Violet") #Main Characters former teacher and current boss
 define li = Character("Lily") #Main Characters former/current girlfriend
 
 
-image Scene1 = Movie(play="Scene1.webm")
-image Scene2P1 = Movie(play="Scene2part1.webm")
+image s1 = Movie(play="s1.webm")
+image s2p1 = Movie(play="s2p1.webm")
 image Scene2P2 = Movie(play="Scene2part2.webm")
 image Scene2P3 = Movie(play="Scene2part3.webm")
 image Scene3 = Movie(play="Scene3.webm")
@@ -29,48 +29,47 @@ image Scene7P3 = Movie(play="Scene7part3.webm")
 image Scene8 = Movie(play="Scene8.webm")
 image Scene9 = Movie(play="Scene9.webm")
 image Scene10P1 = Movie(play="Scene10part1.webm")
-image Scene10P2 = "Scene10part2.png"
-image Scene10P3 = "Scene10part3.png"
+#image Scene10P2 = "Scene10part2.png"
+#image Scene10P3 = "Scene10part3.png"
 image Scene10P4 = Movie(play="Scene10part4.webm")
-image Scene10P5 = "Scene10part5.png"
+#image Scene10P5 = "Scene10part5.png"
 image Scene10P6 = Movie(play="Scene10part6.webm")
-image s11p1 = "s11p1.png"
-image s11p2 = "s11p2.png"
-image s11p3 = "s11p3.png"
-image s11p4 = "s11p4.png"
-image s11p5 = "s11p5.png"
-image s11p6 = "s11p6.png"
-image s11p7 = "s11p7.png"
-image s11p8 = "s11p8.png"
-image s11p9 = "s11p9.png"
-image s11p10 = "s11p10.png"
-image s11p11 = "s11p11.png"
-image s11p12 = "s11p12.png"
-image s11p13 = "s11p13.png"
-image s11p14 = "s11p14.png"
-image s11p15 = "s11p15.png"
-image s12p1 = "s12p1.png"
-image s12p2 = "s12p2.png"
-image s12p3 = "s12p3.png"
-image s12p4 = "s12p4.png"
-image s12p5 = "s12p5.png"
-image s12p6 = "s12p6.png"
-image s12p7 = "s12p7.png"
-image s12p8 = "s12p8.png"
-image s12p9 = "s12p9.png"
-image s12p10n12 = "s12p10n12.png"
-image s12p11n13 = "s12p11n13.png"
-image s12p14 = "s12p14.png"
-image s12p15 = "s12p15.png"
-image s12p16 = "s12p16.png"
-image s12p17 = "s12p17.png"
-image s12p18 = "s12p18.png"
-image s12p19 = "s12p19.png"
-image s12p20 = "s12p20.png"
-image s12p21 = "s12p21.png"
-image s12p22 = "s12p22.png"
-image s13p1 = "s13p1.png"
-
+#image s11p1 = "s11p1.png"
+#image s11p2 = "s11p2.png"
+#image s11p3 = "s11p3.png"
+#image s11p4 = "s11p4.png"
+#image s11p5 = "s11p5.png"
+#image s11p6 = "s11p6.png"
+#image s11p7 = "s11p7.png"
+#image s11p8 = "s11p8.png"
+#image s11p9 = "s11p9.png"
+#image s11p10 = "s11p10.png"
+#image s11p11 = "s11p11.png"
+#image s11p12 = "s11p12.png"
+#image s11p13 = "s11p13.png"
+#image s11p14 = "s11p14.png"
+#image s11p15 = "s11p15.png"
+#image s12p1 = "s12p1.png"
+#image s12p2 = "s12p2.png"
+#image s12p3 = "s12p3.png"
+#image s12p4 = "s12p4.png"
+#image s12p5 = "s12p5.png"
+#image s12p6 = "s12p6.png"
+#image s12p7 = "s12p7.png"
+#image s12p8 = "s12p8.png"
+#image s12p9 = "s12p9.png"
+#image s12p10n12 = "s12p10n12.png"
+#image s12p11n13 = "s12p11n13.png"
+#image s12p14 = "s12p14.png"
+#image s12p15 = "s12p15.png"
+#image s12p16 = "s12p16.png"
+#image s12p17 = "s12p17.png"
+#image s12p18 = "s12p18.png"
+#image s12p19 = "s12p19.png"
+#image s12p20 = "s12p20.png"
+#image s12p21 = "s12p21.png"
+#image s12p22 = "s12p22.png"
+#image s13p1 = "s13p1.png"
 
 
 # The game starts here.
@@ -79,7 +78,7 @@ image s13p1 = "s13p1.png"
 
 label start:
 
-    show Scene1
+    show s1
 
     pm "The predominant belief of creation is that in the beginning their were two celestial entitys."
 
@@ -87,13 +86,13 @@ label start:
 
     pm "It is believed that they travelled across space to find a suitable world to seed with life."
 
-    hide Scene1
+    hide s1
 
-    show Scene2P1
+    show s2p1
 
     pm "Eventually they came across our world, in the beginning it was a harsh, barren place that was inhabited by primitive life that stuggled to survive."
 
-    hide Scene2P1
+    hide s2p1
 
     show Scene2P2
 
@@ -201,17 +200,17 @@ label start:
 
     hide Scene10P1
 
-    show Scene10P2
+    show s10p2
 
     pl "Its been a long time since i tasted this...."
 
-    hide Scene10P2
+    hide s10p2
 
-    show Scene10P3
+    show s10p3
 
     pl "I CAN SEE YOU!"
 
-    hide Scene10P3
+    hide s10p3
 
     show Scene10P4
 
@@ -219,11 +218,11 @@ label start:
 
     hide Scene10P4
 
-    show Scene10P5
+    show s10p5
 
     pl "AND YOU ARE DELICIOUS!"
 
-    hide Scene10P5
+    hide s10p5
 
     show Scene10P6
 
