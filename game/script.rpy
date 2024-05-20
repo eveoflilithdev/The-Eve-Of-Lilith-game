@@ -636,6 +636,14 @@ label start:
 
     hide s14p8
 
+    show s14p9
+
+    vi "I'll contact you in a few days Lily, i should have something for you by then."
+
+    li "Thanks Violet."
+
+    hide s14p9
+
 
 
 
