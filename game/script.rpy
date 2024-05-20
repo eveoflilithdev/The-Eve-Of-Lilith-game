@@ -542,6 +542,113 @@ label start:
 
     hide s13p4
 
+    show s13p5
+
+    mc "*sigh*"
+
+    mc "Lily oh Lily, why must you cause me so much trouble."
+
+    hide s13p5
+
+    show s13p6
+
+    mc "Why do i still hold out hope that we'll meet again."
+
+    hide s13p6
+
+    show s13p7
+
+    mc "*Thinks about the first time he met Lily*"
+
+    hide s13p7
+
+    show s13p8
+
+    mc "..."
+
+    hide s13p8
+
+    show s13p9
+
+    mc "...."
+
+    hide s13p9
+
+    show s13p10
+
+    mc "....."
+
+    hide s13p10
+
+    show s14p1
+
+    mc "Tic."
+
+    hide s14p1
+
+    show s14p2
+
+    mc "Sign the register please."
+
+    hide s14p2
+
+    show s14p3
+
+    mc "Tac."
+
+    hide s14p3
+
+    show s14p4
+
+    mc "Fuck."
+
+    vi "Adam could you check the archive to see if we have a book."
+
+    mc "Will do, mam."
+
+    hide s14p4
+
+    show s14p5
+
+    mc "Title?"
+
+    vi "Chronicles of Eden, it should have 4 volumes, this student is lookng for the first volume."
+
+    hide s14p5
+
+    show s14p6
+
+    mc "We have it but it's in the elven sector, so Ellariels department i believe."
+
+    hide s14p6
+
+    show s14p7
+
+    vi "It may take a couple days to find."
+
+    li "Im fine with that."
+
+    hide s14p7
+
+    show s14p8
+
+    vi "I'll have to put in a request for someone to get it."
+
+    hide s14p8
+
+
+
+
+
+
+
+
+    hide s14p4
+
+    show s14p5
+
+
+
 
 
 
