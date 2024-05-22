@@ -1,5 +1,6 @@
 define pm = Character("???") #Prologue, Meridia
 define pl = Character("???") #Prologue, Lilandra
+define st = Character("???") #Prologue, Stalker Lily
 define mc = Character("Adam") #Main Character, Adam - might make this customizable eventually
 define me = Character("Meridia") #Main Characters twin sister
 define morg = Character("Morgan") #Main Characters mother
@@ -7,7 +8,7 @@ define morr = Character("Morrigan") #Main Characters aunt
 define xa = Character("Xana") #Main Characters cousin
 define ev = Character("Eve") #Main Characters grandmother
 define vi = Character("Violet") #Main Characters former teacher and current boss
-define li = Character("Lily") #Main Characters former/current girlfriend
+define li = Character("Lily") #Main Characters former girlfriend
 
 
 image s1 = Movie(play="s1.webm")
@@ -654,21 +655,67 @@ label start:
     
     hide s14p10
 
+    show s15p1
 
+    mc "Where did you come from, where did you go?"
 
+    hide s15p1
 
+    show s15p2
 
+    mc "Where did you come from, Cotton-Eye Lily?"
 
+    hide s15p2
 
+    show s15p3
 
-    hide s14p4
+    mc "Ah well, its gotten late i should go to bed."
 
-    show s14p5
+    hide s15p3
 
+    show s15p4
 
+    mc "*Yaaaaaawn* ....so tired."
 
+    hide s15p4
 
+    show s15p5
 
+    mc "*honk.....*"
+
+    mc "*.....shoo*"
+
+    show s15p6
+
+    me "*Whispering* Adam you still awake?"
+
+    hide s15p6
+
+    show s15p7
+
+    me "*Whispering* Can.. I.. Sleep.. Here..?"
+
+    mc "*mimimimi*"
+
+    me "*Whispering* Im just gonna lay down next to you."
+
+    hide s15p7
+
+    show s15p8
+
+    st "*NO...NO...NO...NO...NO...NO...*"
+
+    st "*SCREAMING INTERNALLY!*"
+
+    hide s15p8
+
+    show s15p9
+
+    st "*IT SHOULD'VE BEEN ME, NOT HER. IT'S NOT FAIR!*"
+
+    st "*SCREAMING INTERNALLY, ETERNALLY!*"
+
+    hide s15p9
 
 
 
