@@ -480,19 +480,27 @@ label start:
 
     me "...stay calm!"
 
-    me "....stay calm!"
-
-    me ".....stay calm!"
-
     hide s12p19
 
     show s12p20
 
-    me "*I CANT STAY FUCKING CALM!*"
+    me "....stay calm!"
 
     hide s12p20
 
     show s12p21
+
+    me ".....stay calm!"
+
+    hide s12p21
+
+    show s12p22
+
+    me "*I CANT STAY FUCKING CALM!*"
+
+    hide s12p22
+
+    show s12p23
 
     morg "Well, can't say i didnt see that coming."
 
@@ -502,9 +510,9 @@ label start:
 
     mc "Competiton?"
 
-    hide s12p21
+    hide s12p23
 
-    show s12p22
+    show s12p24
 
     morg "Xana isnt the only one attached to you and we all missed you son."
 
@@ -518,7 +526,7 @@ label start:
 
     mc "I'll have to talk to Meridia later, anyway ill be in my room if you need me."
 
-    hide s12p22
+    hide s12p24
 
     show s13p1
 
