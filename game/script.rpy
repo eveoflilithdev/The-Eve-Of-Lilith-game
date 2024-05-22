@@ -406,7 +406,7 @@ label start:
 
     me "About two years ago, you had just started your final year."
 
-    mc "So its been 6 years since i last saw them, i wonder what Xana is like now."
+    mc "So its been 3 years since i last saw them, i wonder what Xana is like now."
 
     me "Cuter, she missed you alot the last time she visited."
 
