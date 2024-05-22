@@ -206,9 +206,11 @@ label start:
     pl "Its been a long time since i tasted this...."
 
 
-    $ mc = renpy.input("What is your name? Default = Adam", "", length=15, exclude=" 0123456789+=,.?!<>{}[]()").strip() or "Adam"
+    $ mc = renpy.input("...Tell me, what is your name? Default = Adam", "", length=15, exclude=" 0123456789+=,.?!<>{}[]()").strip() or "Adam"
     define mc = Character("[mc]")
     #Get mc as an input, ("ask a question", "Prefill with a name user can press enter", character limit, "can't enter these characters"). gets rid of extra blank spaces leading and trailing() or "if they enter nothing then use this"
+
+    pl "Exquisite!"
 
     hide s10p2
 
