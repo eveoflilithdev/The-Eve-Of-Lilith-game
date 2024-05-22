@@ -508,7 +508,7 @@ label start:
 
     morg "She has competition."
 
-    mc "Competiton?"
+    mc "Competition?"
 
     hide s12p23
 
