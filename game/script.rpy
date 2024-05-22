@@ -1,7 +1,7 @@
 define pm = Character("???") #Prologue, Meridia
 define pl = Character("???") #Prologue, Lilandra
 define st = Character("???") #Prologue, Stalker Lily
-define mc = Character("Adam") #Main Character, Adam - might make this customizable eventually
+define mc = Character("Adam") #Main Character, Adam, customizable
 define me = Character("Meridia") #Main Characters twin sister
 define morg = Character("Morgan") #Main Characters mother
 define morr = Character("Morrigan") #Main Characters aunt
