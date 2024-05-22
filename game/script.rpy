@@ -207,6 +207,7 @@ label start:
 
 
     $ mc = renpy.input("What is your name? Default = Adam", "", length=15, exclude=" 0123456789+=,.?!<>{}[]()").strip() or "Adam"
+    define mc = Character("[mc]")
     #Get mc as an input, ("ask a question", "Prefill with a name user can press enter", character limit, "can't enter these characters"). gets rid of extra blank spaces leading and trailing() or "if they enter nothing then use this"
 
     hide s10p2
@@ -273,7 +274,7 @@ label start:
 
     show s11p6
 
-    me "You okay Adam?"
+    me "You okay [mc]?"
 
     hide s11p6
 
@@ -607,7 +608,7 @@ label start:
 
     mc "Fuck."
 
-    vi "Adam could you check the archive to see if we have a book."
+    vi "[mc] could you check the archive to see if we have a book."
 
     mc "Will do, mam."
 
@@ -651,11 +652,11 @@ label start:
 
     show s14p10
 
-    vi "Adam could you return this please?"
+    vi "[mc] could you return this please?"
 
-    vi "Adam?"
+    vi "[mc]?"
 
-    vi "Adam??"
+    vi "[mc]??"
     
     hide s14p10
 
@@ -691,7 +692,7 @@ label start:
 
     show s15p6
 
-    me "*Whispering* Adam you still awake?"
+    me "*Whispering* [mc] you still awake?"
 
     hide s15p6
 
