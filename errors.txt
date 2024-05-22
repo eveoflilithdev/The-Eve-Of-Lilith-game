@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 537: show statement expects a non-empty block.
-    show  s13p4 with dissolve: xzoom 0.5 yzoom 0.5
-                              ^
+File "game/script.rpy", line 209: is not terminated with a newline. (Check strings and parenthesis.)
+        $ mc = renpy.input("What is your name?", "Adam", length=15
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sat May 18 22:03:10 2024
+Wed May 22 13:58:14 2024
