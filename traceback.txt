@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('images/s13p4.webp') at 0x0000000004bfcb80>:
-  File "game/script.rpy", line 539, in script
-    me "IT DOESN'T MATTER!"
-OSError: Couldn't find file 'images/s13p4.webp'.
+While loading <renpy.display.im.Image object ('images/s12p16.webp') at 0x0000000004b6abb0>:
+  File "game/script.rpy", line 461, in script
+    me "WHAAAAAAAAAAA.....WHAT....when?...how?"
+OSError: Couldn't find file 'images/s12p16.webp'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 539, in script
-    me "IT DOESN'T MATTER!"
+  File "game/script.rpy", line 461, in script
+    me "WHAAAAAAAAAAA.....WHAT....when?...how?"
   File "E:\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
     Say.execute(self)
   File "E:\renpy-8.2.1-sdk\renpy\ast.py", line 615, in execute
@@ -65,9 +65,9 @@ Full traceback:
     filelike = renpy.loader.load(self.filename, directory="images")
   File "E:\renpy-8.2.1-sdk\renpy\loader.py", line 672, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'images/s13p4.webp'.
+OSError: Couldn't find file 'images/s12p16.webp'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
-The Eve Of Lilith 0.1.0-Prologue
-Sat May 18 22:52:41 2024
+The Eve Of Lilith Prototype-WIP
+Wed May 22 23:17:02 2024

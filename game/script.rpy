@@ -732,6 +732,34 @@ label start:
 
     hide s15p9
 
+    show s15p10
 
+    st "[mc] Belongs to me!"
+
+    hide s15p10
+
+    show s15p11
+
+    st "*BANG!*"
+
+    hide s15p11
+
+    show s15p12
+
+    st "*BANG!*"
+
+    hide s15p12
+
+    show s15p13
+
+    me "What the hell was that?"
+
+    hide s15p13
+
+    show s15p14
+
+    me "Just let me have this damn it!"
+
+    hide s15p14
 
     return     # This ends the game.
