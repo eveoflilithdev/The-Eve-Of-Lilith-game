@@ -81,7 +81,7 @@ label start:
 
     show s1
 
-    pm "The predominant belief of creation is that in the beginning their were two celestial entitys."
+    pm "The primary belief of creation is that in the beginning their were two celestial beings."
 
     pm "The first represented life and the second represented death."
 
@@ -109,13 +109,13 @@ label start:
 
     show s3
 
-    pm "Within this paradise stood three beings said to have been created by the celestials for themselves to inhabit, two of them were women and one was a man."
+    pm "Within this paradise stood three beings said to have been created by the celestials for themselves to inhabit, two of them were female and one was male."
     
     hide s3
 
     show s4p1
 
-    pm "The paradise provided the three with shelter. It is here that they began to fill the barren world with the essence needed for life "
+    pm "The paradise provided the three with shelter. It is here that they began to fill the barren world with the essence needed for life."
 
     hide s4p1
 
@@ -628,7 +628,7 @@ label start:
 
     mc "Title?"
 
-    vi "Chronicles of Eden, it should have 4 volumes, this student is lookng for the first volume."
+    vi "Chronicles of Eden, it should have 4 volumes, this student is looking for the first volume."
 
     hide s14p5
 
