@@ -904,6 +904,30 @@ label start:
 
     hide s17p10
 
+    show s18p1
+
+    mc "WHAT THE FUCK FATASS!"
+
+    mc "WHY THE FUCK ARE YOU HERE!"
+
+    hide s18p1
+
+    show s18p2
+
+    ph "Oh, You're up there, i came to see your sister."
+
+    mc "Touch my sister with you greasy hand and ill burn your NTR loving ass to a crisp myself."
+
+    ph "Okay, Okay, forget i said anything."
+
+    hide s18p2
+
+    show s18p3
+
+    mc "Well Fatass, i haven't even eaten breakfast yet so stay outside and wait."
+
+    hide s18p3
+
 
 
     
