@@ -1,73 +1,1158 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('images/s12p16.webp') at 0x0000000004b6abb0>:
-  File "game/script.rpy", line 461, in script
-    me "WHAAAAAAAAAAA.....WHAT....when?...how?"
-OSError: Couldn't find file 'images/s12p16.webp'.
+While running game code:
+  File "game/script.rpy", line 291, in script
+    mc "It's all good."
+RecursionError: maximum recursion depth exceeded in __instancecheck__
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 461, in script
-    me "WHAAAAAAAAAAA.....WHAT....when?...how?"
+  File "game/script.rpy", line 291, in script
+    mc "It's all good."
   File "E:\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
     Say.execute(self)
   File "E:\renpy-8.2.1-sdk\renpy\ast.py", line 615, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "E:\renpy-8.2.1-sdk\renpy\exports.py", line 1493, in say
     who(what, *args, **kwargs)
-  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1394, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1045, in do_display
-    display_say(who,
-  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 741, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "E:\renpy-8.2.1-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "E:\renpy-8.2.1-sdk\renpy\display\core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "E:\renpy-8.2.1-sdk\renpy\display\core.py", line 2818, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "E:\renpy-8.2.1-sdk\renpy\display\core.py", line 1352, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 486, in renpy.display.render.render_screen
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "E:\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "E:\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "E:\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "E:\renpy-8.2.1-sdk\renpy\display\transform.py", line 957, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 978, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 413, in renpy.display.accelerator.RenderTransform.render_child
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "E:\renpy-8.2.1-sdk\renpy\display\image.py", line 513, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "E:\renpy-8.2.1-sdk\renpy\display\image.py", line 316, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "E:\renpy-8.2.1-sdk\renpy\display\im.py", line 626, in render
-    return cache.get(self, render=True)
-  File "E:\renpy-8.2.1-sdk\renpy\display\im.py", line 309, in get
-    surf = image.load()
-  File "E:\renpy-8.2.1-sdk\renpy\display\im.py", line 761, in load
-    raise e
-  File "E:\renpy-8.2.1-sdk\renpy\display\im.py", line 711, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "E:\renpy-8.2.1-sdk\renpy\loader.py", line 672, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'images/s12p16.webp'.
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1377, in __call__
+    who = self.prefix_suffix("who", self.who_prefix, who, self.who_suffix)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1293, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1273, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 97, in interpolate
+    rv += format(value, fmt)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1243, in __format__
+    return format(str(self), spec)
+  File "E:\renpy-8.2.1-sdk\renpy\character.py", line 1235, in __str__
+    rv = renpy.substitutions.substitute(who)[0]
+  File "E:\renpy-8.2.1-sdk\renpy\substitutions.py", line 342, in substitute
+    s = renpy.translation.translate_string(s)
+  File "E:\renpy-8.2.1-sdk\renpy\translation\__init__.py", line 579, in translate_string
+    return stl.translate(s)
+  File "E:\renpy-8.2.1-sdk\renpy\translation\__init__.py", line 520, in translate
+    notags = re.sub(r"\{\#.*?\}", "", old)
+  File "lib/python3.9/re.py", line 210, in sub
+  File "lib/python3.9/re.py", line 291, in _compile
+RecursionError: maximum recursion depth exceeded in __instancecheck__
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 The Eve Of Lilith Prototype-WIP
-Wed May 22 23:17:02 2024
+Sun Jun  2 11:16:51 2024

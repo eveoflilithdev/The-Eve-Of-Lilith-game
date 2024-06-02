@@ -916,7 +916,7 @@ label start:
 
     ph "Oh, You're up there, i came to see your sister."
 
-    mc "Touch my sister with you greasy hand and ill burn your NTR loving ass to a crisp myself."
+    mc "Touch my sister with your greasy hands and ill burn your NTR loving ass to a crisp myself."
 
     ph "Okay, Okay, forget i said anything."
 
