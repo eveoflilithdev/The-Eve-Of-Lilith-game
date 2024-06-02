@@ -9,6 +9,8 @@ define xa = Character("Xana") #Main Characters cousin
 define ev = Character("Eve") #Main Characters grandmother
 define vi = Character("Violet") #Main Characters former teacher and current boss
 define li = Character("Lily") #Main Characters former girlfriend
+define ph = Character("Phiat Assar") #Main Characters work colleague and NTR degenerate that will be moscked throught the story
+define misc = Character("") #Intentionally left blank
 
 
 image s1 = Movie(play="s1.webm")
@@ -761,5 +763,149 @@ label start:
     me "Just let me have this damn it!"
 
     hide s15p14
+
+    show s16p1
+
+    me "Mmm...hmm...*yawn*"
+    
+    mc "Why you are in my bed?"
+
+    me "Ahh."
+
+    hide s16p1
+
+    show s16p2
+
+    me "Oooooo."
+
+    hide s16p2
+
+    show s16p3
+
+    mc "Watch your head."
+
+    hide s16p3
+
+    show s16p4
+
+    me "Oww."
+
+    mc "Do i even want t ask?"
+
+    hide s16p4
+
+    show s16p5
+
+    me "Sorry."
+
+    hide s16p5
+
+    show s16p6
+
+    me "Im gonna leave."
+
+    hide s16p6
+
+    show s16p7
+
+    mc "Meridia!"
+
+    mc "I still wanna talk by the way!"
+
+    hide s16p7
+
+    show s16p8
+
+    mc "Whatever..."
+
+    mc "I can smell breakfast."
+
+    hide s16p8
+
+    show s17p1
+
+    mc "Morning Mom."
+
+    morg "Good morning son, i made omelettes for breakfast."
+
+    hide s17p1
+
+    show s17p2
+
+    mc "They look great."
+
+    hide s17p2
+
+    show s17p3
+
+    morg "Mmm, you sure have grown alot haven't you baby."
+
+    mc "Damn right i did."
+
+    hide s17p3
+
+    show s17p4
+
+    mc "Meridia's being weird since she found out about Lily."
+
+    morg "Well it was bound to happen eventually, you've just gotta deal with it the best you can."
+
+    hide s17p4
+
+    show s17p5
+
+    morg "Here ya go baby."
+
+    mc "Thanks Mom."
+
+    hide s17p5
+
+    show s17p6
+
+    morg "Morning Meridia, omelettes for breakfast, come sit down."
+
+    hide s17p6
+
+    show s17p7
+
+    morg "Care to share whats on your mind Meridia?"
+
+    me "No"
+
+    hide s17p7
+
+    show s17p8
+
+    mc "She snuck into my room and slept next to me."
+
+    morg "Oh, weird indeed."
+
+    morg "How bold of you Meridia, you haven't done that since you were both little."
+
+    me "It was cold."
+
+    morg "What was that dear?, i didn't hear you."
+
+    me "IT. WAS. CO...."
+
+    misc "DING. DONG."
+
+    hide s17p8
+
+    show s17p9
+
+    mc "I'll get that, i hope it isn't who i think it may be."
+
+    hide s17p9
+
+    show s17p10
+
+    mc "Dont be him. Dont be him. Dont be him."
+
+    hide s17p10
+
+
+
+    
 
     return     # This ends the game.
