@@ -32,48 +32,8 @@ image s7p3 = Movie(play="s7p3.webm")
 image s8 = Movie(play="s8.webm")
 image s9 = Movie(play="s9.webm")
 image s10p1 = Movie(play="s10p1.webm")
-#image s10p2 = "s10p2.png"
-#image s10p3 = "s10p3.png"
 image s10p4 = Movie(play="s10p4.webm")
-#image s10p5 = "s10p5.png"
 image s10p6 = Movie(play="s10p6.webm")
-#image s11p1 = "s11p1.png"
-#image s11p2 = "s11p2.png"
-#image s11p3 = "s11p3.png"
-#image s11p4 = "s11p4.png"
-#image s11p5 = "s11p5.png"
-#image s11p6 = "s11p6.png"
-#image s11p7 = "s11p7.png"
-#image s11p8 = "s11p8.png"
-#image s11p9 = "s11p9.png"
-#image s11p10 = "s11p10.png"
-#image s11p11 = "s11p11.png"
-#image s11p12 = "s11p12.png"
-#image s11p13 = "s11p13.png"
-#image s11p14 = "s11p14.png"
-#image s11p15 = "s11p15.png"
-#image s12p1 = "s12p1.png"
-#image s12p2 = "s12p2.png"
-#image s12p3 = "s12p3.png"
-#image s12p4 = "s12p4.png"
-#image s12p5 = "s12p5.png"
-#image s12p6 = "s12p6.png"
-#image s12p7 = "s12p7.png"
-#image s12p8 = "s12p8.png"
-#image s12p9 = "s12p9.png"
-#image s12p10n12 = "s12p10n12.png"
-#image s12p11n13 = "s12p11n13.png"
-#image s12p14 = "s12p14.png"
-#image s12p15 = "s12p15.png"
-#image s12p16 = "s12p16.png"
-#image s12p17 = "s12p17.png"
-#image s12p18 = "s12p18.png"
-#image s12p19 = "s12p19.png"
-#image s12p20 = "s12p20.png"
-#image s12p21 = "s12p21.png"
-#image s12p22 = "s12p22.png"
-#image s13p1 = "s13p1.png"
-
 
 # The game starts here.
 
@@ -790,7 +750,7 @@ label start:
 
     me "Oww."
 
-    mc "Do i even want t ask?"
+    mc "Do i even want to ask?"
 
     hide s16p4
 
@@ -927,6 +887,71 @@ label start:
     mc "Well Fatass, i haven't even eaten breakfast yet so stay outside and wait."
 
     hide s18p3
+
+    show s19p1
+
+    morg "Who was at the door?"
+
+    mc "A degenerate that belongs on a cross."
+
+    hide s19p1
+
+    show s19p2
+
+    morg "Well, thats certainly something."
+
+    mc "It was someone from the library, he was supposed to meet me at work but he decided to come here instead."
+
+    hide s19p2
+
+    show s19p3
+
+    mc "He's one of them NTR loving goblins, so i dont particularly like his company."
+
+    morg "Thats, understandable."
+
+    mc "As i said before, they belong on a cross."
+
+    hide s19p3
+
+    show s19p4
+
+    mc "Another fantastic omelette mom."
+
+    morg "Well at least one of you like my food."
+
+    hide s19p4
+
+    show s19p5
+
+    me "Can i..."
+
+    mc "Cya later."
+
+    morg "Have a good day baby."
+
+    hide s19p5
+
+    show s20p1
+
+    mc "Fatass, never do this again."
+
+    hide s20p1
+
+    show s20p2
+
+    ph "Alright, Alright"
+
+    mc "Get moving Fatass, your already late."
+
+    hide s20p2
+
+    show s20p3
+
+    mc "Violet is gonna be more pissed off with you than i am."
+
+    hide s20p3 
+
 
 
 
