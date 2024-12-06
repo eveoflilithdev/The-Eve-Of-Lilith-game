@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 209: is not terminated with a newline. (Check strings and parenthesis.)
-        $ mc = renpy.input("What is your name?", "Adam", length=15
+File "game/script.rpy", line 81: expected statement.
+    vpunch
+          ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed May 22 13:58:14 2024
+Fri Dec  6 19:34:11 2024

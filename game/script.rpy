@@ -3,6 +3,7 @@ define pl = Character("???") #Prologue, Lilandra
 define st = Character("???") #Prologue, Lily
 define mci = Character("???") #Main Character, Intro
 define mc = Character("???") #Main Character, Adam, customizable
+define ve = Character("???") #Veronica
 define me = Character("Meridia") #Main Characters twin sister
 define morg = Character("Morgan") #Main Characters mother
 define morr = Character("Morrigan") #Main Characters aunt
@@ -15,9 +16,9 @@ define misc = Character("") #Intentionally left blank
 
 image s1d = Movie(play="s1d.webm")
 image s1 = Movie(play="s1.webm")
-image s2p1 = Movie(play="s2p1.webm")
-image s2p2 = Movie(play="s2p2.webm")
-image s2p3 = Movie(play="s2p3.webm")
+#image s2p1 = Movie(play="s2p1.webm")
+#image s2p2 = Movie(play="s2p2.webm")
+#image s2p3 = Movie(play="s2p3.webm")
 image s3 = Movie(play="s3.webm")
 image s4p1 = Movie(play="s4p1.webm")
 image s4p2 = Movie(play="s4p2.webm")
@@ -44,25 +45,27 @@ label start:
 
     show s1p1
     
-    st "Hnnn... yes, yes"
+    mci "(zzzz... zzzz... zzzz...)"
+
+    st "(Hnnn... yes, yes)"
 
     hide s1p1
 
     show s1d
 
-    st "Aaahh... Im so close"
+    st "(Aaahh... Im so close)"
 
     hide s1d
 
     show s1p1
 
-    st "Please... i want it... inside."
+    st "(Please... i want it... inside.)"
 
     hide s1p1
 
     show s1d
 
-    mci "Thats... risky... Fuck... cant stop..."
+    mci "Thats... risky... Fuck... cant stop..." 
 
     hide s1d
 
@@ -70,15 +73,14 @@ label start:
 
     mci "Lily... I..."
 
-    hide s1p1
+    mci "Love..."
 
-    hide s1d
+    hide s1p1
 
     show s1p2
     #Screen Shake
-    mci "Love..."
 
-    mci "ARGH... fuck, this fucking dream again."
+    mci "ARGH... fuck, this fucking dream again." with vpunch
 
     hide s1p2
 
@@ -131,6 +133,26 @@ label start:
     mci "(Uhh, this is going to be a long 5 minutes.)"
 
     hide s1p10
+
+    show s2p1
+
+    mci "(Glad that's finally over, i wonder what i'll have to eat when i get home.)"
+
+    hide s2p1
+
+    show s2p2
+
+    mci "(Im sure Mom already knows.)"
+
+    hide s2p2
+
+    show s2p3
+
+    ve "What? How? He just disappeared!"
+
+    hide s2p3
+
+    show s1
 
     pm "The primary belief of creation is that in the beginning their were two celestial beings."
 
