@@ -1,7 +1,8 @@
 define pm = Character("???") #Prologue, Meridia
 define pl = Character("???") #Prologue, Lilandra
-define st = Character("???") #Prologue, Stalker Lily
-define mc = Character("Adam") #Main Character, Adam, customizable
+define st = Character("???") #Prologue, Lily
+define mci = Character("???") #Main Character, Intro
+define mc = Character("???") #Main Character, Adam, customizable
 define me = Character("Meridia") #Main Characters twin sister
 define morg = Character("Morgan") #Main Characters mother
 define morr = Character("Morrigan") #Main Characters aunt
@@ -9,10 +10,10 @@ define xa = Character("Xana") #Main Characters cousin
 define ev = Character("Eve") #Main Characters grandmother
 define vi = Character("Violet") #Main Characters former teacher and current boss
 define li = Character("Lily") #Main Characters former girlfriend
-define ph = Character("Phiat Assar") #Main Characters work colleague and NTR degenerate that will be moscked throught the story
+define ph = Character("Phiat Assar") #Main Characters work colleague and NTR degenerate that will be mocked throughtout the story
 define misc = Character("") #Intentionally left blank
 
-
+image s1d = Movie(play="s1d.webm")
 image s1 = Movie(play="s1.webm")
 image s2p1 = Movie(play="s2p1.webm")
 image s2p2 = Movie(play="s2p2.webm")
@@ -41,7 +42,95 @@ image s10p6 = Movie(play="s10p6.webm")
 
 label start:
 
-    show s1
+    show s1p1
+    
+    st "Hnnn... yes, yes"
+
+    hide s1p1
+
+    show s1d
+
+    st "Aaahh... Im so close"
+
+    hide s1d
+
+    show s1p1
+
+    st "Please... i want it... inside."
+
+    hide s1p1
+
+    show s1d
+
+    mci "Thats... risky... Fuck... cant stop..."
+
+    hide s1d
+
+    show s1p1
+
+    mci "Lily... I..."
+
+    hide s1p1
+
+    hide s1d
+
+    show s1p2
+    #Screen Shake
+    mci "Love..."
+
+    mci "ARGH... fuck, this fucking dream again."
+
+    hide s1p2
+
+    show s1p3
+
+    mci "I hope that dream isnt going to keep haunting me."
+
+    misc "Arriving at, South, Eden, Station, in, 5 Minutes."
+
+    hide s1p3
+
+    show s1p4
+
+    mci "Almost home, surprised i slept the entire ride from the Academy."
+
+    hide s1p4
+
+    show s1p5
+
+    mci "(Oh, it was empty when i got on, hopefully they don't jump at me.)"
+
+    hide s1p5
+
+    show s1p6
+
+    mci "(Just walk straight, don't look at them, don't pay attention to them.)"
+
+    hide s1p6
+
+    show s1p7
+
+    mci "(The last thing i want right now is to be rushed by a horde of women, again.)"
+
+    hide s1p7
+
+    show s1p8
+
+    mci "(Keep going, keep going.)"
+
+    hide s1p8
+
+    show s1p9
+
+    mci "(I can practically feel them staring at me.)"
+
+    hide s1p9
+
+    show s1p10
+
+    mci "(Uhh, this is going to be a long 5 minutes.)"
+
+    hide s1p10
 
     pm "The primary belief of creation is that in the beginning their were two celestial beings."
 
