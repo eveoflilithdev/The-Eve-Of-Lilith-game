@@ -1,6 +1,7 @@
 define pm = Character("???") #Prologue, Meridia
 define pl = Character("???") #Prologue, Lilandra
 define st = Character("???") #Prologue, Lily
+define pmorg = Character("???") #Prologue, Morgan
 define mci = Character("???") #Main Character, Intro
 define mc = Character("???") #Main Character, Adam, customizable
 define ve = Character("???") #Veronica
@@ -11,7 +12,7 @@ define xa = Character("Xana") #Main Characters cousin
 define ev = Character("Eve") #Main Characters grandmother
 define vi = Character("Violet") #Main Characters former teacher and current boss
 define li = Character("Lily") #Main Characters former girlfriend
-define ph = Character("Phiat Assar") #Main Characters work colleague and NTR degenerate that will be mocked throughtout the story
+define ph = Character("Phiat Assar") #Main Characters work colleague and NTR degenerate that will be mocked throughout the story
 define misc = Character("") #Intentionally left blank
 
 image s1d = Movie(play="s1d.webm")
@@ -19,7 +20,7 @@ image s1 = Movie(play="s1.webm")
 #image s2p1 = Movie(play="s2p1.webm")
 #image s2p2 = Movie(play="s2p2.webm")
 #image s2p3 = Movie(play="s2p3.webm")
-image s3 = Movie(play="s3.webm")
+#image s3 = Movie(play="s3.webm")
 image s4p1 = Movie(play="s4p1.webm")
 image s4p2 = Movie(play="s4p2.webm")
 image s4p3 = Movie(play="s4p3.webm")
@@ -151,6 +152,58 @@ label start:
     ve "What? How? He just disappeared!"
 
     hide s2p3
+
+    show s3p1
+
+    mci "Well, there it is, home."
+
+    hide s3p1
+
+    show s3p2
+
+    mci "Sister?"
+
+    mci "What is she up to?"
+
+    hide s3p2
+
+    show s3p3
+
+    mci "..."
+
+    hide s3p3
+
+    show s3p4
+
+    pm "You, brother, are late"
+
+    mci "Well, sister, you see, i had to fight off a horde of wo..."
+
+    hide s3p4
+
+    show s3p5
+
+    pm "But you're finally here!"
+
+    mci "Hello to you as well."
+
+    hide s3p5
+
+    show s3p6
+
+    pmorg "She's been peeking around that wall all day."
+
+    mci "Hey Mom."
+
+    hide s3p6
+
+    show s3p7
+
+    pmorg "Welcome home Son"
+
+    pmorg "Now, how about a kiss"
+
+    hide s3p7
 
     show s1
 
