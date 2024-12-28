@@ -199,11 +199,23 @@ label start:
 
     show s3p7
 
-    pmorg "Welcome home Son"
+    pmorg "Welcome home, Son."
 
-    pmorg "Now, how about a kiss"
+    pmorg "Now, how about a kiss."
 
     hide s3p7
+
+    show s3p8
+
+    mci "Kept You Waiting, Huh"
+
+    hide s3p8
+
+    show s3p9
+
+    pmorg "Mmph...Yes...You did"
+
+    hide s3p9
 
     show s1
 
