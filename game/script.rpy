@@ -201,21 +201,150 @@ label start:
 
     pmorg "Welcome home, Son."
 
-    pmorg "Now, how about a kiss."
+    pmorg "Now, how about a kiss for mommy."
+
+    menu:
+
+        "(Love) I love mommy's kisses.": #Love
+            jump loves3
+
+        "(Control) How about a hug instead.": #Control
+            jump control1s3
+
 
     hide s3p7
 
+label loves3:
+
     show s3p8
 
-    mci "Kept You Waiting, Huh"
+    mci "Kept You Waiting, Huh."
 
     hide s3p8
 
     show s3p9
 
-    pmorg "Mmph...Yes...You did"
+    pmorg "Mmph...Yes...You did."
+
+    menu:
+
+        "(Lust) Fantasize": #Lust
+            jump fantasizes3
+
+        "Go Inside":
+            jump game
 
     hide s3p9
+
+label control1s3:
+
+    show s3p8
+
+    mci "Kept You Waiting, Huh."
+
+    hide s3p8
+
+    show s3p9
+
+    pmorg "Mmph...Yes...You did."
+
+    menu:
+
+        "Fantasize": #Lust
+            jump fantasizes3
+
+        "Go Inside":
+            jump game
+
+    hide s3p9
+
+label fantasizes3:
+
+    pm "Can i get a kiss?"
+
+    pmorg "A kiss? No, you should greet Daddy properly." #Morgan steps behind Meridia and puts both hands on her should
+
+    pm "Can i really?" #Meridia looks up at Morgan
+
+    pmorg "How about it Daddy, want to feel our daughters lips around your cock?" #Morgan places her hand on the side of Meridias face with a finger in her mouth
+
+    mci "I thought you'd never ask."
+
+    pmorg "Your dream is finally coming true daughter." #Morgan places her hands on Meridias shoulders and push's her down
+
+    pm "I've wanted this for so long Daddy." #Meridia places her hands on MC's crotch
+
+    pm "Oh my, Mommy this is..."
+
+    pmorg "Yes, it really is..."
+
+    pmorg "You've grown so, so much..."
+
+    pm "I want it, I want it all" #Meridia begins taking MC cock into her mouth
+
+    #Blowjob Animation
+
+    menu:
+        "(Power) I want to feel your throat around my cock.": #Power
+            jump powers3
+
+        "(Control) Mommy, make her take my cock deeper.": #Control
+            jump control2s3
+
+label powers3:
+
+    pmorg "Oh my..."
+
+    mci "Wonderful, your using your throat perfectly."
+
+    #Deepthroat Animation
+
+    mci "Mommy, you did an amazing job of teaching her."
+
+    pmorg "I cant wait for her to show you what else she can do Daddy."
+
+    mci "Time to stop before i finish."
+
+    pm "Why? I wanted to taste it Daddy."
+
+    mci "Because your first ever taste of my seed will be with your womb."
+
+    pm "Yay!"
+
+    jump wakeup
+
+label control2s3:
+
+    pmorg "Here, let me help you."
+
+    pmorg "Loosen your jaw up."
+
+    pmorg "Their, Daddys cock slid right down your throat."
+
+    #Deepthroat Animation
+
+    mci "Her throat feels amazing mommy."
+
+    pmorg "We should stop soon."
+
+    mci "Yes, lets stop now."
+
+    pm "Why? I wanted to taste it Daddy."
+
+    pmorg "Because Daddy wants to make you just like me, a Mommy!"
+
+    pm "Yay!"
+
+    jump wakeup
+
+
+label wakeup:
+
+    pmorg "Dont just stand there son, the food is going to get cold."
+
+    jump game
+
+label game:
 
     show s1
 

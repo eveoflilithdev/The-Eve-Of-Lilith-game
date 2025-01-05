@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 4, in script
-    define pmorg = character("???") #Prologue, Morgan
-  File "game/script.rpy", line 4, in <module>
-    define pmorg = character("???") #Prologue, Morgan
-NameError: name 'character' is not defined
+  File "game/script.rpy", line 232, in script
+    jump fantasizes3
+ScriptError: could not find label 'fantasizes3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 4, in script
-    define pmorg = character("???") #Prologue, Morgan
-  File "E:\renpy-8.2.1-sdk\renpy\ast.py", line 2219, in execute
-    self.set()
-  File "E:\renpy-8.2.1-sdk\renpy\ast.py", line 2233, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "E:\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 4, in <module>
-    define pmorg = character("???") #Prologue, Morgan
-NameError: name 'character' is not defined
+  File "game/script.rpy", line 232, in script
+    jump fantasizes3
+  File "E:\renpy-8.2.1-sdk\renpy\ast.py", line 1698, in execute
+    rv = renpy.game.script.lookup(target)
+  File "E:\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'fantasizes3'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 The Eve Of Lilith Prototype-WIP
-Thu Dec 26 06:52:47 2024
+Thu Jan  2 08:29:59 2025
