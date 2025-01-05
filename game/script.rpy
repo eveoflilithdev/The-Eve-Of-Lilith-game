@@ -216,13 +216,13 @@ label start:
 
 label loves3:
 
-    show s3p8
+    show s3p8a
 
     mci "Kept You Waiting, Huh."
 
-    hide s3p8
+    hide s3p8a
 
-    show s3p9
+    show s3p9a
 
     pmorg "Mmph...Yes...You did."
 
@@ -234,35 +234,35 @@ label loves3:
         "Go Inside":
             jump game
 
-    hide s3p9
+    hide s3p9a
 
 label control1s3:
 
-    show s3p8
+    show s3p8b
 
     mci "Kept You Waiting, Huh."
 
-    hide s3p8
+    hide s3p8b
 
-    show s3p9
+    show s3p9b
 
     pmorg "Mmph...Yes...You did."
 
     menu:
 
-        "Fantasize": #Lust
+        "(Lust) Fantasize": #Lust
             jump fantasizes3
 
         "Go Inside":
             jump game
 
-    hide s3p9
+    hide s3p9b
 
 label fantasizes3:
 
     pm "Can i get a kiss?"
 
-    pmorg "A kiss? No, you should greet Daddy properly." #Morgan steps behind Meridia and puts both hands on her should
+    pmorg "A kiss? No, you should greet Daddy properly." #Morgan steps behind Meridia and puts both hands on her shoulders
 
     pm "Can i really?" #Meridia looks up at Morgan
 
@@ -319,7 +319,7 @@ label control2s3:
 
     pmorg "Loosen your jaw up."
 
-    pmorg "Their, Daddys cock slid right down your throat."
+    pmorg "Their, Daddys cock slide right down your throat."
 
     #Deepthroat Animation
 
