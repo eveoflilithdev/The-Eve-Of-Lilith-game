@@ -1,22 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 232, in script
-    jump fantasizes3
-ScriptError: could not find label 'fantasizes3'.
+  File "game/script.rpy", line 285, in script
+    Pmorg "Want to feel our daughters lips around your cock?" #Morgan places her hand on the side of Meridias face with a finger in her mouth"
+Exception: Sayer 'Pmorg' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 232, in script
-    jump fantasizes3
-  File "E:\renpy-8.2.1-sdk\renpy\ast.py", line 1698, in execute
-    rv = renpy.game.script.lookup(target)
-  File "E:\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'fantasizes3'.
+  File "game/script.rpy", line 285, in script
+    Pmorg "Want to feel our daughters lips around your cock?" #Morgan places her hand on the side of Meridias face with a finger in her mouth"
+  File "E:\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "E:\renpy-8.2.1-sdk\renpy\ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "E:\renpy-8.2.1-sdk\renpy\ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Pmorg' is not defined.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 The Eve Of Lilith Prototype-WIP
-Thu Jan  2 08:29:59 2025
+Mon Feb 10 22:51:10 2025

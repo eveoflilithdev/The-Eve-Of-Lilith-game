@@ -201,11 +201,11 @@ label start:
 
     pmorg "Welcome home, Son."
 
-    pmorg "Now, how about a kiss for mommy."
+    pmorg "Now, how about a kiss for mommy?."
 
     menu:
 
-        "(Love) I love mommy's kisses.": #Love
+        "(Love) I love your kisses.": #Love
             jump loves3
 
         "(Control) How about a hug instead.": #Control
@@ -260,25 +260,57 @@ label control1s3:
 
 label fantasizes3:
 
+    show s3fp1
+
     pm "Can i get a kiss?"
+
+    hide s3fp1
+
+    show s3fp2
 
     pmorg "A kiss? No, you should greet Daddy properly." #Morgan steps behind Meridia and puts both hands on her shoulders
 
-    pm "Can i really?" #Meridia looks up at Morgan
+    hide s3fp2
 
-    pmorg "How about it Daddy, want to feel our daughters lips around your cock?" #Morgan places her hand on the side of Meridias face with a finger in her mouth
+    show s3fp3
+
+    pm "Can i really?" #Meridia looks up at Morgan"
+
+    hide s3fp3
+
+    show s3fp4
+
+    pmorg "How about it Daddy."
+    
+    pmorg "Want to feel our daughters lips around your cock?" #Morgan places her hand on the side of Meridias face with a finger in her mouth"
 
     mci "I thought you'd never ask."
 
+    hide s3fp4
+
+    show s3fp5
+
     pmorg "Your dream is finally coming true daughter." #Morgan places her hands on Meridias shoulders and push's her down
 
+    hide s3fp5
+
+    show s3fp6
+
     pm "I've wanted this for so long Daddy." #Meridia places her hands on MC's crotch
+
+    hide s3fp6
+
+    show s3fp7
 
     pm "Oh my, Mommy this is..."
 
     pmorg "Yes, it really is..."
 
-    pmorg "You've grown so, so much..."
+    pmorg "My dear boy, you've grown so, so much..."
+
+    hide s3fp7
+
+    show s3fp8
 
     pm "I want it, I want it all" #Meridia begins taking MC cock into her mouth
 
@@ -288,7 +320,7 @@ label fantasizes3:
         "(Power) I want to feel your throat around my cock.": #Power
             jump powers3
 
-        "(Control) Mommy, make her take my cock deeper.": #Control
+        "(Control) Mommy, make her take my cock deep.": #Control
             jump control2s3
 
 label powers3:
